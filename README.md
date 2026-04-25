@@ -1,42 +1,49 @@
-# 🚀 Leury Brand — Dev Card
+# Leury Brand - Dev Card
 
-Tarjeta personal de desarrollador construida con **Node.js** y **Docker**, desplegable como contenedor.
+Tarjeta personal de desarrollador construida con Node.js y Docker, desplegable como contenedor.
 
-## 🛠️ Tecnologías
+## Tecnologias
 
 - Node.js + Express
 - HTML/CSS (vanilla)
 - Docker
+- GitHub Actions (CI/CD)
 
-## 📁 Estructura
-devops-hola-mundo/
-├── public/
-│   └── index.html
-├── index.js
-├── package.json
-├── Dockerfile
-└── .dockerignore
+## Estructura
 
-## ▶️ Correr localmente
+    devops-hola-mundo/
+    ├── .github/
+    │   └── workflows/
+    │       └── deploy.yml
+    ├── public/
+    │   └── index.html
+    ├── index.js
+    ├── package.json
+    ├── Dockerfile
+    └── .dockerignore
 
-```bash
-npm install
-node index.js
-```
+## Correr localmente
+
+    npm install
+    node index.js
 
 Abre: http://localhost:4000
 
-## 🐳 Correr con Docker
+## Correr con Docker
 
-```bash
-docker build -t leury-brand-card .
-docker run -p 4000:4000 leury-brand-card
-```
+    docker build -t lb19/practica-continua:latest .
+    docker run -p 4000:4000 lb19/practica-continua:latest
 
-## 📦 Imagen en Docker Hub
+## Imagen en Docker Hub
 
-```bash
-docker pull leurybrand/leury-brand-card
-!{image alt}(https://github.com/lb19082004/practica-continua/blob/f400ba89dc560c7b60e3d5c496a2de1744b6f7e6/Captura%20de%20pantalla%202026-04-23%20234847.png) 
+    docker pull lb19/practica-continua:latest
 
+Repositorio Docker Hub: https://hub.docker.com/r/lb19/practica-continua
 
+## App en produccion
+
+https://practica-devops-latest.onrender.com
+
+## Repositorio
+
+https://github.com/lb19082004/practica-continua
