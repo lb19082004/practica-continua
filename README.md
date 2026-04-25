@@ -42,7 +42,7 @@ Repositorio Docker Hub: https://hub.docker.com/r/lb19/practica-continua
 
 ## App en produccion
 
-https://practica-devops-latest.onrender.com
+https://practica-continua-fzxf.onrender.com
 
 ## Repositorio
 
